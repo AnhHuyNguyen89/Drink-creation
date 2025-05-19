@@ -1,0 +1,12 @@
+﻿@model List<Project_1.Models.StoreViewModel>;
+
+<h1>Welome to our store</h1>
+<p>Click on the Create on navigation to create drink</p>
+
+
+<ul>
+    @foreach (var store in Model)
+    {
+        <li>@store.Name (@store.Quantity)</li>
+    }
+</ul>
